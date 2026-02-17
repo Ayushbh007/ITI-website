@@ -37,7 +37,7 @@
                 Address of the Institute
               </td>
               <td class="px-6 py-3 text-gray-600">
-                Chitragopi More, Padarawan, Jamhor, Aurangabad, Bihar – 824121
+                Kharkhura main road Delha Gaya (823002)
               </td>
             </tr>
 
@@ -46,7 +46,7 @@
                 Date of Establishment
               </td>
               <td class="px-6 py-3 text-gray-600">
-                —
+                18/09/2009
               </td>
             </tr>
 
@@ -55,7 +55,7 @@
                 DGET File Reference No.
               </td>
               <td class="px-6 py-3 text-gray-600">
-                DGET-6/4/72/2012-TC
+                DGET-12/01/2009-TC
               </td>
             </tr>
 
@@ -64,7 +64,7 @@
                 Code Allocated by DGET
               </td>
               <td class="px-6 py-3 text-gray-600">
-                —
+                PR10000235
               </td>
             </tr>
 
@@ -73,7 +73,7 @@
                 Mobile No.
               </td>
               <td class="px-6 py-3 text-gray-600">
-                09934473418, 07004607280
+                7004607280, 9934630175
               </td>
             </tr>
 
@@ -82,7 +82,7 @@
                 Email ID
               </td>
               <td class="px-6 py-3 text-gray-600">
-                harendraku5@gmail.com
+                siddharthitcgaya967@gmail.com
               </td>
             </tr>
 
@@ -91,16 +91,17 @@
                 Location
               </td>
               <td class="px-6 py-3 text-gray-600">
-                —
-              </td>
-            </tr>
-
-            <tr>
-              <td class="px-6 py-3 font-medium text-gray-700">
-                Approach / How to Reach
-              </td>
-              <td class="px-6 py-3 text-gray-600">
-                —
+                  <div class="w-full flex justify-center">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.609613535115!2d84.9918041112695!3d24.80881784722954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f32a7000ee644f%3A0x24d43be89cbeb59f!2sSiddharth%20ITI!5e0!3m2!1sen!2sin!4v1771348231251!5m2!1sen!2sin"
+                      width="350"
+                      height="200"
+                      style="border:0;"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
               </td>
             </tr>
           </tbody>

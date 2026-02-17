@@ -27,11 +27,7 @@
         'Administrative Staff',
         'Infrastructure, Building and Workshop',
         'Trade Specific Infrastructure',
-        'Court Cases and Status',
-        'Electric Power Supply',
-        'Fund Status',
         'ISO Certificates',
-        'Other Certifications',
       ],
     },
     {
@@ -40,15 +36,7 @@
     },
     {
       title: 'Admission',
-      items: [
-        'Schemes Running',
-        'Rating of Institute by QCI',
-        'Trade',
-        'Admission Criteria',
-        'Admission Format',
-        'Information Brochure',
-        'Rules & Regulations',
-      ],
+      items: [],
     },
     {
       title: 'Students Corner',
@@ -76,25 +64,13 @@
       ],
     },
     {
-      title: 'Other Information',
-      items: [
-        'Visitors List',
-        'Details of Inspection',
-        'State Directorate',
-        'DGET & State Government Orders',
-        'Feedback & Suggestions',
-        'Grievance Redressal Mechanism',
-        'Certificate Verification',
-      ],
-    },
-    { title: 'Online Registration', items: [] },
-    {
       title: 'Useful Links',
       items: ['NCVT – Management Information System', 'Directorate of Employment & Training'],
     },
-    { title: 'Login', items: ['Admin Login', 'Mail'] },
-    { title: 'Photos', items: [] },
   ];
+
+  // Items displayed directly in the "More" dropdown
+  const moreItems = ['Rules and Regulation'];
 
   function toggleMenu(title: string) {
     openMenu = openMenu === title ? null : title;
@@ -109,6 +85,13 @@
   const dedicatedRoutes: Record<string, string> = {
     'home': '/',
     'about institute': '/aboutinstitute',
+    'introduction of the institute': '/introduction-of-institute',
+      'director message': '/director-message',
+      'administrative staff': '/administrative-staff',
+      'infrastructure, building and workshop': '/infrastructure-building-and-workshop',
+      'trade specific infrastructure': '/trade-specific-infrastructure',
+        'admission': '/admission',
+        'rules and regulation': '/rules-and-regulation',
   };
 
   // Get the URL for a menu item
@@ -130,7 +113,7 @@
     >
       <!-- Left: Logo -->
       <div class="flex items-center flex-shrink-0">
-        <img src="/logos/logo.png" alt="Engine Logo" class="h-12 md:h-14 lg:h-16 xl:h-20 w-auto" />
+        <img src="/logos/logo1.png" alt="Engine Logo" class="h-12 md:h-14 lg:h-16 xl:h-20 w-auto" />
       </div>
 
       <!-- Center: Desktop Menu -->
@@ -302,6 +285,16 @@
                   {/if}
                 </div>
               {/each}
+              {#each moreItems as item (item)}
+                <a
+                  href="{getMenuItemUrl(item)}"
+                  class="block px-3 md:px-4 py-2 font-medium text-gray-700 hover:bg-gray-50 hover:text-red-600 transition text-xs md:text-sm border-t border-gray-100"
+                  role="menuitem"
+                  tabindex="0"
+                >
+                  {item}
+                </a>
+              {/each}
             </div>
           {/if}
         </div>
@@ -312,7 +305,7 @@
         <!-- Social Icons (visible from lg+) -->
         <div class="hidden lg:flex items-center gap-2 lg:gap-3 xl:gap-4">
           <a
-            href="https://instagram.com"
+            href="https://instagram.com/siddharthiti"
             target="_blank"
             aria-label="Instagram"
             class="text-gray-500 hover:text-red-600 transition"
@@ -329,7 +322,7 @@
           </a>
 
           <a
-            href="https://youtube.com"
+            href="https://youtube.com/user/siddharthiti"
             target="_blank"
             aria-label="YouTube"
             class="text-gray-500 hover:text-red-600 transition"
@@ -346,7 +339,7 @@
           </a>
 
           <a
-            href="https://t.me"
+            href="https://t.me/siddharthiti"
             target="_blank"
             aria-label="Telegram"
             class="text-gray-500 hover:text-red-600 transition"
@@ -363,7 +356,7 @@
           </a>
 
           <a
-            href="https://wa.me/918279632961"
+            href="https://wa.me/+917004607280"
             target="_blank"
             aria-label="WhatsApp"
             class="text-gray-500 hover:text-red-600 transition"
@@ -380,7 +373,7 @@
           </a>
 
           <a
-            href="https://twitter.com"
+            href="https://x.com/siddharthiti"
             target="_blank"
             aria-label="Twitter"
             class="text-gray-500 hover:text-red-600 transition"
@@ -397,7 +390,7 @@
           </a>
 
           <a
-            href="https://facebook.com"
+            href="https://facebook.com/siddharthiti"
             target="_blank"
             aria-label="Facebook"
             class="text-gray-500 hover:text-red-600 transition"
@@ -416,7 +409,7 @@
 
         <!-- Phone (visible on all md+) -->
         <a
-          href="tel:+1234567890"
+          href="tel:+917004607280"
           class="hidden md:flex items-center gap-1 md:gap-1.5 px-2 md:px-3 py-1.5 rounded-lg hover:bg-red-50 transition flex-shrink-0"
           aria-label="Call Us"
         >
@@ -434,7 +427,7 @@
             />
           </svg>
           <span class="hidden xl:block text-xs lg:text-sm font-medium text-gray-700"
-            >+1 (234) 567-890</span
+            >+91 7004607280</span
           >
         </a>
       </div>
@@ -444,7 +437,7 @@
     <div class="md:hidden flex h-16 items-center justify-between px-4">
       <!-- Left: Logo -->
       <div class="flex items-center flex-shrink-0">
-        <img src="/logos/logo.png" alt="Engine Logo" class="h-12 w-auto" />
+        <img src="/logos/logo1.png" alt="Engine Logo" class="h-12 w-auto" />
       </div>
 
       <!-- Right: Mobile Menu Button -->
@@ -498,11 +491,22 @@
         </div>
       {/each}
 
+      <!-- More Items in Mobile Menu -->
+      {#each moreItems as item (item)}
+        <a
+          href="{getMenuItemUrl(item)}"
+          class="block font-medium text-gray-800 py-2 hover:text-red-600 transition"
+          on:click={() => (mobileOpen = false)}
+        >
+          {item}
+        </a>
+      {/each}
+
       <!-- Mobile Social Icons & Phone -->
       <div class="border-t border-gray-200 pt-4 mt-4">
         <!-- Phone Section -->
         <a
-          href="tel:+1234567890"
+          href="tel:+917004607280"
           class="flex items-center gap-3 py-3 px-2 rounded-lg hover:bg-gray-50 transition mb-3"
         >
           <svg
@@ -518,13 +522,13 @@
               d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
             />
           </svg>
-          <span class="text-sm font-medium text-gray-700">+1 (234) 567-890</span>
+          <span class="text-sm font-medium text-gray-700">+91 7004607280</span>
         </a>
 
         <!-- Social Icons -->
         <div class="flex items-center gap-4 justify-center py-3">
           <a
-            href="https://instagram.com"
+            href="https://instagram.com/siddharthiti"
             target="_blank"
             aria-label="Instagram"
             class="text-gray-500 hover:text-red-600 transition"
@@ -536,7 +540,7 @@
             </svg>
           </a>
           <a
-            href="https://youtube.com"
+            href="https://youtube.com/user/siddharthiti"
             target="_blank"
             aria-label="YouTube"
             class="text-gray-500 hover:text-red-600 transition"
@@ -560,7 +564,7 @@
             </svg>
           </a>
           <a
-            href="https://wa.me"
+            href="https://wa.me/+917004607280"
             target="_blank"
             aria-label="WhatsApp"
             class="text-gray-500 hover:text-red-600 transition"
@@ -572,7 +576,7 @@
             </svg>
           </a>
           <a
-            href="https://twitter.com"
+            href="https://x.com/siddharthiti"
             target="_blank"
             aria-label="Twitter"
             class="text-gray-500 hover:text-red-600 transition"
@@ -584,7 +588,7 @@
             </svg>
           </a>
           <a
-            href="https://facebook.com"
+            href="https://facebook.com/siddharthiti"
             target="_blank"
             aria-label="Facebook"
             class="text-gray-500 hover:text-red-600 transition"

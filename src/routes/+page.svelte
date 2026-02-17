@@ -49,7 +49,7 @@
           <!-- Image -->
           <div class="aspect-[4/3] w-full overflow-hidden bg-gray-100">
             <img
-              src="/images/image_1.jpg"
+              src="/images/slide_5.jpeg"
               alt="Institute Building"
               class="h-full w-full object-cover"
             />
@@ -60,9 +60,8 @@
             <h2 class="mb-3 text-xl font-semibold text-gray-900">Introduction of the Institute</h2>
 
             <p class="mb-4 text-sm leading-relaxed text-gray-700">
-              Siddharth Private Industrial Training Institute is a unit of Mahavir Educational
-              Development & Welfare Trust, Chitragopi More, Aurangabad (Bihar). The institute
-              operates as an Industrial Training Center (ITC) under private management.
+              Siddharth Industrial Training Center, Gaya Bihar, affiliated to NCVT & Director by Harendra kumar, Secretary, Yamuna yadav.
+Siddharth Shiv Trust believed in going their, where is no path and leaving a trail. As a founder he started Siddharth ITC, Gaya in the vicinity of Delha - kharkhura main road at 1 km stone and Gaya Railway junction to kharkhura main road 2 km stone.
             </p>
 
             <p class="mb-4 text-sm leading-relaxed text-gray-700">

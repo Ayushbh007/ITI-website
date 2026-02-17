@@ -1,7 +1,7 @@
 ﻿<script lang="ts">
   import { onMount } from 'svelte';
 
-  export let images: string[] = ['/images/slide_2.jpg', '/images/slide_3.jpg'];
+  export let images: string[] = ['/images/slide_5.jpeg', '/images/slide_6.jpeg',"/images/slide_7.jpeg"];
 
   export let announcements: string[] = [
     'Admissions Open for 2026',
