@@ -86,12 +86,13 @@
     'home': '/',
     'about institute': '/aboutinstitute',
     'introduction of the institute': '/introduction-of-institute',
-      'director message': '/director-message',
-      'administrative staff': '/administrative-staff',
-      'infrastructure, building and workshop': '/infrastructure-building-and-workshop',
-      'trade specific infrastructure': '/trade-specific-infrastructure',
-        'admission': '/admission',
-        'rules and regulation': '/rules-and-regulation',
+    'director message': '/director-message',
+    'administrative staff': '/administrative-staff',
+    'infrastructure, building and workshop': '/infrastructure-building-and-workshop',
+    'trade specific infrastructure': '/trade-specific-infrastructure',
+    'admission': '/admission',
+    'rules and regulation': '/rules-and-regulation',
+    'iso certificates': '/iso-certificates',
   };
 
   // Get the URL for a menu item
